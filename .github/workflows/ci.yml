@@ -36,6 +36,7 @@ jobs:
           -Dsonar.organization=lobacevich-1 
           -Dsonar.projectKey=lobacevich_test
           -Dsonar.branch.name=${{ github.ref_name }}
+
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
